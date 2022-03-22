@@ -19,7 +19,7 @@ public class InitPageObject extends Base {
     /*
     Вводим текст в строку поиска
      */
-    public void setSetSearchText(String text) {
+    public void setSearchText(String text) {
         setText(searchText, text);
     }
 

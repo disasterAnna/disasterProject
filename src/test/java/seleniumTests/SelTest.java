@@ -13,7 +13,7 @@ public class SelTest extends BaseTest {
         getDriver().manage().window().maximize();
 
         InitPageObject in = new InitPageObject(getDriver());
-        in.setSetSearchText("Привет");
+        in.setSearchText("Привет");
         in.clickSubmitSearch();
         SearchResultPageObject sr = new SearchResultPageObject(getDriver());
         Assertion as = new Assertion();
