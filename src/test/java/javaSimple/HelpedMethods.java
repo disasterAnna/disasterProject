@@ -70,12 +70,12 @@ public class HelpedMethods {
     //Модный-молодёжный switch
     public String switchRadioNewWave(String radioName){
         String radio;
-        radio = switch (radioName){
-            case "Afro" -> "100.2";
-            case "Auto" -> "106.1";
-            default -> "Ми не знать этот радиоволна!";
-        };
-        return radio;
+//        radio = switch (radioName){
+//            case "Afro" -> "100.2";
+//            case "Auto" -> "106.1";
+//            default -> "Ми не знать этот радиоволна!";
+//        };
+        return null;
     }
 
 }
