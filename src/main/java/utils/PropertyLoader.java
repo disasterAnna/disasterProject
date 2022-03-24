@@ -16,13 +16,15 @@ public class PropertyLoader {
     }
 
     public static Properties getAllPropFromFile(final String path) {
+
         Properties properties = new Properties();
+
         FileInputStream fs = null;
         InputStreamReader is = null;
 
         try {
             try {
-                fs = new FileInputStream("src/main/resources" + path);
+                fs = new FileInputStream("src/main/resources/" + path);
                 is = new InputStreamReader(fs, "UTF-8");
             } catch (FileNotFoundException | UnsupportedEncodingException e) {
                 e.printStackTrace();

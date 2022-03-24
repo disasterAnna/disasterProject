@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class SelParamTest extends BaseTest {
 
-    @DataProvider(name = "setWords", parallel = true)
+    @DataProvider(name = "setWords", parallel = false)
     public Object[][] getData (){
         Object[][] words = new Object[][]{
                 {new WordsTestData("word").getWord1(),"word1"},

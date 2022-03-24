@@ -45,9 +45,7 @@ public class BaseTest {
         driver = new RemoteWebDriver(hub,op);
     }
 
-    public WebDriver getDriver() {
-        return driver;
-    }
+
 
     @AfterTest
     public void afterT(){
@@ -56,6 +54,10 @@ public class BaseTest {
         if (driver!=null){
             driver.quit();
         }
+    }
+
+    public WebDriver getDriver() {
+        return driver;
     }
 
 
